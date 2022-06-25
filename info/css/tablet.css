@@ -1,0 +1,18 @@
+header figure {
+    width: 225px;
+    height: 36px;
+    margin-top: 70px;
+}
+
+.header--title-container {
+    margin-top: 60px;
+}
+
+.header--title-container p {
+    font-size: 1.5rem;
+}
+
+
+footer .links-section ul {
+    padding-top: 40px;
+}

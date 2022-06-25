@@ -1,0 +1,35 @@
+.container {
+    border: 5px solid #e1bee7;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+
+.item {
+    font-size: 4rem;
+}
+
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 / 4; /*↑↑ es lo mismo que ←←*/
+}
+
+.item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    /* grid-row: 2 / 4; */
+    grid-row-start: 2;
+    grid-row-end: 4; /*↑↑ es lo mismo que ←←*/
+}
+
+.item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: 2 / 2 / 4 / 4;
+    /* primer 2: fila en la que comienza. segundo 2: columna en la que comienza. primer 4: fila en la que termina. segundo 4: columna en la que termina */
+}

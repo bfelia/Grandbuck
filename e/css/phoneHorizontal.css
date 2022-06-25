@@ -1,0 +1,47 @@
+.profile__header-flwing-flwers {
+    position: relative;
+    bottom: 70px;
+    left: 72%;
+    display: inline-block;
+}
+
+.bottom ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    list-style: none;
+}
+.bottom ul li {
+    color: #d7d7d7;
+    width: 40%;
+    height: 3rem;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.bottom ul li a {
+    color: #d7d7d7;
+}
+
+.body__item .question {
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.body__item .answer {
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #8b8b8b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.body__item iframe {
+    width: 100%;
+    height: 350px;
+}

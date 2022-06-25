@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                                    /* HTML */
+
+html {
+    font-size: 62.5%;
+}
+
+                                                    /* BODY */
+
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 56px calc(100vh - 112px) 56px;
+    grid-template-areas:
+        "header"
+        "main"
+        "side";
+    place-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-right: 2px black solid;
+    background-color: #bf4d00;
+}
+
+                                                    /* HEADER */
+
+header {
+    border-bottom: 1px #303030 solid;
+    background-color: #000000;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-content: center;
+}
+.header-left {
+    display: grid;
+    justify-content: left;
+    align-content: center;
+}
+.logo {
+    display: inline-block;
+    width: 160px;
+    margin-left: 20px;
+}
+
+.header-right {
+    display: grid;
+    justify-content: right;
+    align-content: center;
+}
+.header-right__btns {
+    display: inline-block;
+}
+.header-right__btns .header-right__nav-btns {
+    display: inline-block;
+    margin-right: 20px;
+}
+.header-right__nav-btns img {
+    width: 25px;
+}
+.header-right__btn-search img {
+    width: 21px;
+}
+.header-right__btn-profile img {
+    width: 30px;
+}
+
+                                                    /* SIDEBAR */
+
+.sidebar {
+    display: grid;
+    background-color: #000000;
+    grid-area: side;
+}
+.hmb-icon {
+    display: none;
+}
+
+.sidebar-navbar {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.sidebar-navbar .sidebar-navbar__btns {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+}
+.sidebar-navbar .sidebar-navbar__btns a {
+    text-decoration: none;
+}
+.sidebar-navbar .sidebar-navbar__btns img {
+    width: 25px;
+}
+.sidebar-navbar .sidebar-navbar__btns span {
+    display: none;
+}
+.sidebar-navbar .sn__bsearch, .sidebar-navbar .sn__bmsgs {
+    display: none;
+}
+
+                                                    /* OPEN SIDEBAR */
+
+.side-nav {
+    display: none;
+    position: absolute;
+    width: 300px;
+    display: none;
+    height: 100vh;
+    background-color: #000000;
+    overflow-y: hidden;
+}
+
+                                                    /* MAIN */
+
+main {
+    background-color: #021226;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: calc(100vh - 112px);
+}
+
+
+.feed {
+    padding: 35px;
+    overflow-y: scroll;
+}
+
+.post {
+    width: 100%;
+    min-height: 200px;
+}
+
+.post__head {
+    width: 100%;
+    height: 70px;
+}
+figure.epnshp-logo {
+    display: inline-block;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.epnshp-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.head-info-epnshp {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    left: 15px;    
+}
+.post__head h2 {
+    display: inline-block;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.post__head .separator {
+    display: inline-block;
+    margin: 0 5px 3px 5px;
+    width: 4px;
+    height: 4px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+}
+.post__head h3 {
+    display: inline-block;
+    color: #727272;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.post__body {
+    padding: 10px 20px;
+}
+.epnshp-info {
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.post__body ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    list-style: none;
+}
+.post__body ul li {
+    color: #d7d7d7;
+    width: 40%;
+    height: 3rem;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.post__body ul li a {
+    color: #d7d7d7;
+}
+
+.feed-divisor-line {
+    margin: 40px auto;
+    width: 90%;
+    height: 2px;
+    background-color: #bf4d00;
+}
+
+
+.suggested {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: none;
+}
+.suggested__box {
+    width: 100%;
+    min-height: 525px;
+    padding: 20px;
+    border: 2px #d7d7d7 solid;
+    border-radius: 40px;
+    background-color: #021730;
+}
+.suggested__box h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.fst {
+    border-top: 2px #757575 solid;
+}
+.suggested__box-profile {
+    padding: 10px;
+    border-bottom: 2px #757575 solid;
+    font-family: 'Open Sans', sans-serif;
+}
+.suggested__box-profile figure {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.suggested__box-profile figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.suggested__box-profile .name-user-info {
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+}
+.suggested__box-profile .name {
+    display: inline-block;
+    color: #d7d7d7;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.suggested__box-profile .separator {
+    display: inline-block;
+    margin: 0 5px 3px 5px;
+    width: 4px;
+    height: 4px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+}
+.suggested__box-profile .username {
+    display: inline-block;
+    color: #727272;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.suggested__box-profile p {
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.suggested__box-profile .link {
+    color: #1d58bf;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}

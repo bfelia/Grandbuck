@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/phoneL.css" media="screen and (min-width: 425px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./css/notebook.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1440px)">
+    <title>Grandbuck</title>
+    <link rel="shortcut icon" href="./img/shortcut-icon.svg">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+                                                <!-- HEADER -->
+    <header>
+        <div class="header-mobile-left">
+            <a href="https://grandbuck.com/wallet"><img src="./img/darkmode-wallet.svg" alt=""></a>
+        </div>
+        <div class="header-left">
+            <picture class="logo">
+                <source  media="(min-width: 425px)" srcset="./img/logoGrandbuckWoutBackground.svg">
+                <img src="./img/logoG.svg" alt="">
+            </picture>
+        </div>
+        <nav class="header-right">
+            <ul class="header-right__btns">
+                <li class="header-right__nav-btns header-right__btn-search"><a href="https://grandbuck.com/search"><img src="./img/darkmode-search.svg" alt=""></a></li>
+                <li class="header-right__nav-btns"><a href="https://grandbuck.com/messages"><img src="./img/darkmode-messages.svg" alt=""></a></li>
+                <li class="header-right__nav-btns"><a href="https://grandbuck.com/wallet"><img src="./img/darkmode-wallet.svg" alt=""></a></li>
+                <li class="header-right__nav-btns header-right__btn-profile"><a href="https://grandbuck.com/profile"><img src="./img/darkmode-profile.svg" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="header-mobile-right">
+            <a href="https://grandbuck.com/profile"><img src="./img/darkmode-profile.svg" alt=""></a>
+        </div>
+    </header>
+
+                                                    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+        <div class="hmb-icon">
+            <a href="#" onclick="openSlideMenu()"><img src="./img/hamburguer-icon.svg" alt=""></a>
+        </div>
+        <div class="sidebar-navbar">
+            <div class="sidebar-navbar__btns sn__bhome sidebar-navbar__mobile-phone">
+                <a href="https://grandbuck.com/home">
+                    <img src="./img/darkmode-home.svg" alt="">
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bsearch sidebar-navbar__mobile-phone">
+                <a href="../search/index.html">
+                    <img src="./img/darkmode-search.svg" alt="">
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__binterestedin">
+                <a href="https://grandbuck.com/interestedin">
+                    <img src="./img/darkmode-interestedin.svg" alt="">
+                    <span>Interested In</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bcreate sidebar-navbar__mobile-phone">
+                <a href="https://grandbuck.com/create">
+                    <img src="./img/darkmode-create.svg" alt="">
+                    <span>Create</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bmyepnshps">
+                <a href="https://grandbuck.com/myepnshps">
+                    <img src="./img/darkmode-myepnshps.svg" alt="">
+                    <span>My Enterprises</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bblog">
+                <a href="https://grandbuck.com/blog">
+                    <img src="./img/darkmode-blog.svg" alt="">
+                    <span>Blog</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bmsgs sidebar-navbar__mobile-phone">
+                <a href="https://grandbuck.com/messages">
+                    <img src="./img/darkmode-messages.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+                                                    <!-- SIDEBAR OPEN -->
+
+    <div id="side-menu" class="side-nav">
+        <div class="open-sidebar__top">
+            <div class="hmb-icon">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()"><img src="./img/hamburguer-icon.svg" alt=""></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logoGrandbuckWoutBackground.svg" alt="">
+            </div>
+        </div>
+        <div class="open-sidebar__btns">
+            <a href="">
+                <div class="open-sidebar__btn os__bhome">
+                    <img src="./img/darkmode-home.svg" alt="">
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="../search/index.html">
+                <div class="open-sidebar__btn os__bsearch">
+                    <img src="./img/darkmode-search.svg" alt="">
+                    <span>Search</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__binterestedin">
+                    <img src="./img/darkmode-interestedin.svg" alt="">
+                    <span>Interested In</span>
+                </div>
+            </a>
+
+            <div class="os-divisor-line"></div>
+
+            <a href="">
+                <div class="open-sidebar__btn os__bcreate">
+                    <img src="./img/darkmode-create.svg" alt="">
+                    <span>Create</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bmyepnshps">
+                    <img src="./img/darkmode-myepnshps.svg" alt="">
+                    <span>My Enterprises</span>
+                </div>
+            </a>
+            
+            <div class="os-divisor-line"></div>
+            
+            <div class="open-sidebar__sign-in">
+                <p>Sign In to follow people,<br/>invest and get interested<br/>in Entrepreneurships</p>
+                <a href=""><img src="./img/signin-profile.svg" alt=""><span>SIGN IN</span></a>
+            </div>
+            
+            <div class="os-divisor-line"></div>
+
+            <h3>More From Grandbuck</h3> 
+            <a href="">
+                <div class="open-sidebar__btn os__bglearning">
+                    <img src="./img/darkmode-glearning.svg" alt="">
+                    <span>G Learning</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bblog">
+                    <img src="./img/darkmode-blog.svg" alt="">
+                    <span>Blog</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bpremium">
+                    <img src="./img/darkmode-gpremium.svg" alt="">
+                    <span>Premium</span>
+                </div>
+            </a>
+
+            <div class="os-divisor-line"></div>
+
+            <a href="">
+                <div class="open-sidebar__btn os__bsettings">
+                    <img src="./img/darkmode-settings.svg" alt="">
+                    <span>Settings</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__breport">
+                    <img src="./img/darkmode-report.svg" alt="">
+                    <span>Report</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bhelp">
+                    <img src="./img/darkmode-help.svg" alt="">
+                    <span>Help</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bfeedback">
+                    <img src="./img/darkmode-feedback.svg" alt="">
+                    <span>Send Feedback</span>
+                </div>
+            </a>
+
+            <div class="os-divisor-line"></div>
+
+            <ul class="open-sidebar__info">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Press</a>
+                </li>
+                <li>
+                    <a href="">Copyright</a>
+                </li>
+                <li>
+                    <a href="">Contact us</a>
+                </li>
+                <li>
+                    <a href="">Creators</a>
+                </li>
+                <li>
+                    <a href="">Advertise</a>
+                </li>
+                <li>
+                    <a href="">Developers</a>
+                </li>
+            </ul>
+
+            <ul class="open-sidebar__info">
+                <li>
+                    <a href="">Terms</a>
+                </li>
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+                <li>
+                    <a href="">Policy & Safety</a>
+                </li>
+                <li>
+                    <a href="">How Grandbuck works</a>
+                </li>
+                <li>
+                    <a href="">Test new features</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    
+                                                    <!-- MAIN -->
+
+    <main>
+        <div id="main" class="feed">
+            <div class="posts">
+
+                <div class="post">
+                    <div class="post__head">
+                        <a href="https://grandbuck.com/e/tesla.html">
+                            <figure class="epnshp-logo">
+                                <img src="./img/tesla-logo.jpg" alt="">
+                            </figure>
+                        </a>
+                        <div class="head-info-epnshp">
+                            <a href="../e/tesla.html" class="epnshp-name">
+                                <h2>Tesla</h2>
+                            </a>
+                                <div class="separator"></div>
+                            <a href="../p/elonmusk.html" class="epnshp-owner">
+                                <h3>Elon Musk</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post__body">
+                        <div class="epnshp-info">
+                            <p>Tesla es una compañía de autos eléctricos. Buscamos dinero para la creación de una nueva fábrica y contratación de empleados. Levantamos inversión 3 veces.</p>
+                        </div>
+                        <ul>
+                            <li>
+                                Ubicación: <a href="">Texas, USA</a>
+                            </li>
+                            <li>
+                                Mercado: <a href="">Automotriz</a>
+                            </li>
+                            <li>
+                                Puntuación: <div class="rating">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                            <li>
+                                Dinero: <a href="">$18.500.000/$38.000.000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feed-divisor-line"></div>
+
+                <div class="post">
+                    <div class="post__head">
+                        <a href="https://grandbuck.com/e/apple.html">
+                            <figure class="epnshp-logo">
+                                <img src="./img/apple-logo.jpg" alt="">
+                            </figure>
+                        </a>
+                        <div class="head-info-epnshp">
+                            <a href="../e/apple.html" class="epnshp-name">
+                                <h2>Apple</h2>
+                            </a>
+                                <div class="separator"></div>
+                            <a href="../p/stevejobs.html" class="epnshp-owner">
+                                <h3>Steve Jobs</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post__body">
+                        <div class="epnshp-info">
+                            <p>Apple, Inc. es una empresa estadounidense que diseña y produce equipos electrónicos, software y servicios en línea.</p>
+                        </div>
+                        <ul>
+                            <li>
+                                Ubicación: <a href="">California, USA</a>
+                            </li>
+                            <li>
+                                Mercado: <a href="">Computación</a>
+                            </li>
+                            <li>
+                                Puntuación: <div class="rating">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                            <li>
+                                Dinero: <a href="">$40.975.000/$47.000.000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feed-divisor-line"></div>
+
+                <div class="post">
+                    <div class="post__head">
+                        <a href="https://grandbuck.com/e/uala.html">
+                            <figure class="epnshp-logo">
+                                <img src="./img/uala-logo.jpg" alt="">
+                            </figure>
+                        </a>
+                        <div class="head-info-epnshp">
+                            <a href="../e/uala.html" class="epnshp-name">
+                                <h2>Ualá</h2>
+                            </a>
+                                <div class="separator"></div>
+                            <a href="../p/pbarbieri.html" class="epnshp-owner">
+                                <h3>Pierpaolo Barbieri</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post__body">
+                        <div class="epnshp-info">
+                            <p>Ualá es una aplicación móvil argentina de gestión financiera personal vinculada a una tarjeta prepago Mastercard que permite a los usuarios realizar transacciones.</p>
+                        </div>
+                        <ul>
+                            <li>
+                                Ubicación: <a href="">Buenos Aires, Argentina</a>
+                            </li>
+                            <li>
+                                Mercado: <a href="">Fintech</a>
+                            </li>
+                            <li>
+                                Puntuación: <div class="rating">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star-dis"></div>
+                                </div>
+                            </li>
+                            <li>
+                                Dinero:<a href="">$15.975.000/$27.000.000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="main suggested" class="suggested">
+            <div class="suggested__box">
+                <h2>Suggested</h2>
+
+                <a href="">
+                    <div class="suggested__box-profile fst">
+                        <figure>
+                            <img src="./img/profile-bautifelia.jpg" alt="">
+                        </figure>
+                        <div class="name-user-info">
+                            <div class="name">Bautista Felia</div>
+                            <div class="separator"></div>
+                            <div class="username">@bautifelia</div>
+                        </div>
+                        <p class="user-info">working to revolutionize and turn Latam into the new Silicon Valley. founder <span class="link">@grandbuck</span></p>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="suggested__box-profile">
+                        <figure>
+                            <img src="./img/profile-elonmusk.jpg" alt="">
+                        </figure>
+                        <div class="name-user-info">
+                            <div class="name">Elon Musk</div>
+                            <div class="separator"></div>
+                            <div class="username">@elonmusk</div>
+                        </div>
+                        <p class="user-info">working to revolutionize transportation both on earth, through electric car maker <span class="link">@Tesla</span> and in space, via rocket producer <span class="link">@SpaceX</span></p>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="suggested__box-profile">
+                        <figure>
+                            <img src="./img/profile-pbarbieri.jpg" alt="">
+                        </figure>
+                        <div class="name-user-info">
+                            <div class="name">Pierpaolo Barbieri</div>
+                            <div class="separator"></div>
+                            <div class="username">@pbarbieri</div>
+                        </div>
+                        <p class="user-info">founder <span class="link">@uala_co</span>, <span class="link">@uala_abc</span>, <span class="link">@uala_arg</span></p>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="suggested__box-profile">
+                        <figure>
+                            <img src="./img/profile-freddier.jpg" alt="">
+                        </figure>
+                        <div class="name-user-info">
+                            <div class="name">Freddy Vega</div>
+                            <div class="separator"></div>
+                            <div class="username">@freddier</div>
+                        </div>
+                        <p class="user-info">CEO, Cofounder: <span class="link">@Platzi</span> / <span class="link">@PlatziBrasil</span> <span class="link">#PlatziSePagaSolo</span></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+                                                    <!-- SCRIPTS -->
+    
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width = '300px';
+            document.getElementById('side-menu').style.display = 'inherit';
+            document.getElementById('main').style.marginLeft = '222px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('side-menu').style.display = 'none';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+    </script>
+</body>
+</html>

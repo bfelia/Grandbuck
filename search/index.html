@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/phoneL.css" media="screen and (min-width: 425px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./css/notebook.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1440px)">
+    <title>Grandbuck</title>
+    <link rel="shortcut icon" href="./img/shortcut-icon.svg">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+                                                <!-- HEADER -->
+    <header>
+        <div class="header-mobile-left">
+            <a href="https://grandbuck.com/wallet"><img src="./img/darkmode-wallet.svg" alt=""></a>
+        </div>
+        <div class="header-left">
+            <picture class="logo">
+                <source  media="(min-width: 425px)" srcset="./img/logoGrandbuckWoutBackground.svg">
+                <img src="./img/logoG.svg" alt="">
+            </picture>
+        </div>
+        <nav class="header-right">
+            <ul class="header-right__btns">
+                <li class="header-right__nav-btns header-right__btn-search"><a href="https://grandbuck.com/search"><img src="./img/darkmode-search.svg" alt=""></a></li>
+                <li class="header-right__nav-btns"><a href="https://grandbuck.com/messages"><img src="./img/darkmode-messages.svg" alt=""></a></li>
+                <li class="header-right__nav-btns"><a href="https://grandbuck.com/wallet"><img src="./img/darkmode-wallet.svg" alt=""></a></li>
+                <li class="header-right__nav-btns header-right__btn-profile"><a href="https://grandbuck.com/profile"><img src="./img/darkmode-profile.svg" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="header-mobile-right">
+            <a href="https://grandbuck.com/profile"><img src="./img/darkmode-profile.svg" alt=""></a>
+        </div>
+    </header>
+
+                                                    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+        <div class="hmb-icon">
+            <a href="#" onclick="openSlideMenu()"><img src="./img/hamburguer-icon.svg" alt=""></a>
+        </div>
+        <div class="sidebar-navbar">
+            <div class="sidebar-navbar__btns sn__bhome sidebar-navbar__mobile-phone">
+                <a href="https://grandbuck.com/home">
+                    <img src="./img/darkmode-home.svg" alt="">
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bsearch sidebar-navbar__mobile-phone">
+                <a href="https://grandbuck.com/search">
+                    <img src="./img/darkmode-search.svg" alt="">
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__binterestedin">
+                <a href="https://grandbuck.com/interestedin">
+                    <img src="./img/darkmode-interestedin.svg" alt="">
+                    <span>Interested In</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bcreate sidebar-navbar__mobile-phone">
+                <a href="https://grandbuck.com/create">
+                    <img src="./img/darkmode-create.svg" alt="">
+                    <span>Create</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bmyepnshps">
+                <a href="https://grandbuck.com/myepnshps">
+                    <img src="./img/darkmode-myepnshps.svg" alt="">
+                    <span>My Enterprises</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bblog">
+                <a href="https://grandbuck.com/blog">
+                    <img src="./img/darkmode-blog.svg" alt="">
+                    <span>Blog</span>
+                </a>
+            </div>
+            <div class="sidebar-navbar__btns sn__bmsgs sidebar-navbar__mobile-phone">
+                <a href="https://grandbuck.com/messages">
+                    <img src="./img/darkmode-messages.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+                                                    <!-- SIDEBAR OPEN -->
+
+    <div id="side-menu" class="side-nav">
+        <div class="open-sidebar__top">
+            <div class="hmb-icon">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()"><img src="./img/hamburguer-icon.svg" alt=""></a>
+            </div>
+            <a href="../home/index.html">
+                <div class="logo">
+                    <img src="./img/logoGrandbuckWoutBackground.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="open-sidebar__btns">
+            <a href="">
+                <div class="open-sidebar__btn os__bhome">
+                    <img src="./img/darkmode-home.svg" alt="">
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bsearch">
+                    <img src="./img/darkmode-search.svg" alt="">
+                    <span>Search</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__binterestedin">
+                    <img src="./img/darkmode-interestedin.svg" alt="">
+                    <span>Interested In</span>
+                </div>
+            </a>
+
+            <div class="os-divisor-line"></div>
+
+            <a href="">
+                <div class="open-sidebar__btn os__bcreate">
+                    <img src="./img/darkmode-create.svg" alt="">
+                    <span>Create</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bmyepnshps">
+                    <img src="./img/darkmode-myepnshps.svg" alt="">
+                    <span>My Enterprises</span>
+                </div>
+            </a>
+            
+            <div class="os-divisor-line"></div>
+            
+            <div class="open-sidebar__sign-in">
+                <p>Sign In to follow people,<br/>invest and get interested<br/>in Entrepreneurships</p>
+                <a href=""><img src="./img/signin-profile.svg" alt=""><span>SIGN IN</span></a>
+            </div>
+            
+            <div class="os-divisor-line"></div>
+
+            <h3>More From Grandbuck</h3> 
+            <a href="">
+                <div class="open-sidebar__btn os__bglearning">
+                    <img src="./img/darkmode-glearning.svg" alt="">
+                    <span>G Learning</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bblog">
+                    <img src="./img/darkmode-blog.svg" alt="">
+                    <span>Blog</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bpremium">
+                    <img src="./img/darkmode-gpremium.svg" alt="">
+                    <span>Premium</span>
+                </div>
+            </a>
+
+            <div class="os-divisor-line"></div>
+
+            <a href="">
+                <div class="open-sidebar__btn os__bsettings">
+                    <img src="./img/darkmode-settings.svg" alt="">
+                    <span>Settings</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__breport">
+                    <img src="./img/darkmode-report.svg" alt="">
+                    <span>Report</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bhelp">
+                    <img src="./img/darkmode-help.svg" alt="">
+                    <span>Help</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="open-sidebar__btn os__bfeedback">
+                    <img src="./img/darkmode-feedback.svg" alt="">
+                    <span>Send Feedback</span>
+                </div>
+            </a>
+
+            <div class="os-divisor-line"></div>
+
+            <ul class="open-sidebar__info">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Press</a>
+                </li>
+                <li>
+                    <a href="">Copyright</a>
+                </li>
+                <li>
+                    <a href="">Contact us</a>
+                </li>
+                <li>
+                    <a href="">Creators</a>
+                </li>
+                <li>
+                    <a href="">Advertise</a>
+                </li>
+                <li>
+                    <a href="">Developers</a>
+                </li>
+            </ul>
+
+            <ul class="open-sidebar__info">
+                <li>
+                    <a href="">Terms</a>
+                </li>
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+                <li>
+                    <a href="">Policy & Safety</a>
+                </li>
+                <li>
+                    <a href="">How Grandbuck works</a>
+                </li>
+                <li>
+                    <a href="">Test new features</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    
+                                                    <!-- MAIN -->
+
+    <main>
+        <div id="main" class="search">
+            
+            <div class="main-input">
+                <div class="main-input-container">
+                    <span class="search-icon">
+                    </span>
+                    <input type="search" placeholder=" Search...">
+                </div>
+            </div>
+
+            <div class="search-results">
+                <h2 class="sug">Suggested</h2>
+                <div class="resultAd">
+
+                    <div class="result_header">
+                        <div class="ad">Ad</div>
+                    </div>
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/uala-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Ualá</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">236</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">183K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Una app para hacerte la vida + fácil + una masterc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resultAd">
+
+                    <div class="result_header">
+                        <div class="ad">Ad</div>
+                    </div>
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/platzi-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Platzi</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">197</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">249K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Educación profesional efectiva 🚀</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/shortcut-icon.svg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Grandbuck</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">197</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">156M</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>El verdadero futuro del crowdfunding</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/tesla-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Tesla</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">197</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">249K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Electric Cars</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/parsii-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Parsii</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">4.5K</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">6.1K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>La solución de parking al alcance de tu mano🚙</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/lemon-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Lemon Cash App</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">196K</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">155K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Tu mundo en crypto 📲</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/globant-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Globant</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">2.1K</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">63K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Reinvention moves the world fwrd, what we do best⚡</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/meli-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Mercado Libre</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">13</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">938K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>#LoMejorEstaLlegando🤝 📦</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/olx-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>OLX Autos</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">29</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">19K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Compramos tu auto de forma 100% online 🚗</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/despegar-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Despegar</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">85</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">676K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>🛫 Encuentra ofertas para tu próximo viaje 🛫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/tiendanube-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Tienda Nube</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">238</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">113K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Mostrale al mundo lo que sos capaz de hacer ✨</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/bitfarms-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Bitfarms</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">15</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">6.1K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Computing power to reshape the world</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/mural-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Mural</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">1.9K</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">10K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Powering effective innovation & team building 💫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/aleph-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Aleph</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">17</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">502</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>🚀 La mejor manera de hacer e-commerce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result">
+
+                    <div class="result_body">
+                        <div class="profile-photo">
+                            <img src="./img/auth0-logo.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Auth0</h2>
+                        </div>
+                        <div class="flwing-flwers">
+                            <div class="flwing">
+                                <span class="num">286</span><br><span class="flw">following</span>
+                            </div>
+                            <div class="flwers">
+                                <span class="num">3.4K</span><br><span class="flw">followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result_footer">
+                        <div class="short-desc">
+                            <p>Secure access for everyone. But not just anyone.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+                                                    <!-- SCRIPTS -->
+
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width = '300px';
+            document.getElementById('side-menu').style.display = 'inherit';
+            document.getElementById('main').style.marginLeft = '222px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('side-menu').style.display = 'none';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+    </script>
+</body>
+</html>

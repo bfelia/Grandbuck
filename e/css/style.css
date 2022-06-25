@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                                    /* HTML */
+
+html {
+    font-size: 62.5%;
+}
+
+                                                    /* BODY */
+
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 56px calc(100vh - 112px) 56px;
+    grid-template-areas:
+        "header"
+        "main"
+        "side";
+    place-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-right: 2px black solid;
+    background-color: #bf4d00;
+}
+
+                                                    /* HEADER */
+
+header {
+    border-bottom: 1px #303030 solid;
+    background-color: #000000;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    place-content: center;
+}
+
+.header-mobile-left {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.header-mobile-left img {
+    width: 30px;
+}
+.header-left {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.logo {
+    display: inline-block;
+    width: 40px;
+    margin-left: 0;
+}
+
+.header-right {
+    display: none;
+}
+.header-right__btns {
+    display: none;
+}
+.header-right__btns .header-right__nav-btns {
+    display: inline-block;
+    margin-right: 20px;
+}
+.header-right__nav-btns img {
+    width: 25px;
+}
+.header-right__btn-search img {
+    width: 21px;
+}
+.header-right__btn-profile img {
+    width: 30px;
+}
+.header-mobile-right {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.header-mobile-right img {
+    width: 35px;
+}
+
+                                                    /* SIDEBAR */
+
+.sidebar {
+    display: grid;
+    background-color: #000000;
+    grid-area: side;
+}
+.hmb-icon {
+    display: none;
+}
+
+.sidebar-navbar {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.sidebar-navbar .sidebar-navbar__btns {
+    display: none;
+}
+.sidebar-navbar .sidebar-navbar__btns a {
+    text-decoration: none;
+}
+.sidebar-navbar .sidebar-navbar__btns img {
+    width: 25px;
+}
+.sidebar-navbar .sidebar-navbar__btns span {
+    display: none;
+}
+.sidebar-navbar .sidebar-navbar__mobile-phone {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+}
+
+                                                    /* OPEN SIDEBAR */
+
+.side-nav {
+    display: none;
+    position: absolute;
+    width: 300px;
+    display: none;
+    height: 100vh;
+    background-color: #000000;
+    overflow-y: hidden;
+}
+
+                                                    /* MAIN */
+
+main {
+    background-color: #021226;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: calc(100vh - 112px);
+}
+
+
+main .profile {
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    overflow-y: scroll;
+}
+
+.profile .profile__header {
+    width: 100%;
+    min-height: 120px;
+}
+
+.profile__header-logo {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url('../img/tesla-logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.profile__header-name {
+    position: relative;
+    bottom: 40px;
+    display: inline-block;
+    width: calc(100% - 80px);
+    margin-left: 17px;
+}
+.profile__header-name h2 {
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.profile__header-separator {
+    display: none;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #d7d7d7;
+}
+
+.profile__header-username {
+    display: none;
+}
+
+.profile__header-flwing-flwers {
+    position: relative;
+    bottom: 40px;
+    left: 40%;
+    display: inline-block;
+}
+.profile__header-flwing-flwers .following {
+    display: inline-block;
+}
+.profile__header-flwing-flwers .following p {
+    text-align: center;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.profile__header-flwing-flwers .following span {
+    font-size: 1.4rem;
+}
+.profile__header-flwing-flwers .followers {
+    display: inline-block;
+    margin-left: 30px;
+}
+.profile__header-flwing-flwers .followers p {
+    text-align: center;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.profile__header-flwing-flwers .followers span {
+    font-size: 1.4rem;
+}
+
+.profile__header-username-ph {
+    position: relative;
+    bottom: 30px;
+    color: #5e5e5e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.profile__header-userinfo {
+    position: relative;
+    bottom: 30px;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+
+.profile__body {
+    width: 100%;
+    height: calc(100% - 120px);
+}
+
+.profile__body-sections {
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    width: 100%;
+    height: 20px;
+}
+.profile__body-sections a {
+    text-align: center;
+    width: 100%;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-bottom: 1px solid #bf4d00;
+}
+.profile__body-sections .left {
+    margin-right: 10px;
+}
+.profile__body-sections .right {
+    margin-left: 10px;
+}
+
+.profile__body-sections-info {
+    width: 100%;
+    min-height: 400px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #022259;
+    border-radius: 7px;
+}
+
+.profile__body-sections-info .header {
+    width: 100%;
+    min-height: 200px;
+}
+.header .top {
+    height: 50px;
+}
+.top .logo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border-radius: 50%;
+    background-image: url('../img/tesla-logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.top .names-top {
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+    display: inline-block;
+    width: calc(100% - 43px);
+}
+.top .enterprise-name {
+    display: inline-block;
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.top .separator {
+    display: /*inline-block*/none;
+    margin: 0 6px 3px 6px;
+    width: 4px;
+    height: 4px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+}
+.top .ceo-name {
+    display: /*inline-block*/none;
+    color: #5e5e5e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.bottom p {
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.bottom ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    list-style: none;
+}
+.bottom ul li {
+    color: #d7d7d7;
+    width: 100%;
+    height: 2rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.bottom ul li a {
+    color: #d7d7d7;
+}
+.bottom .rating {
+    display: inline;
+    height: 25px;
+    padding-top: 5px;
+}
+.bottom .rating .star {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/star.svg');
+}
+.bottom .rating .star-dis {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/star-dis.svg');
+}
+
+
+.profile__body-sections-info .body {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 30px;
+}
+
+
+.body .body__item {
+    margin-top: 15px;
+}
+.body__item .question {
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.body__item .enterprise-url {
+    margin-left: 10px;
+    color: #3071e0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.body__item iframe {
+    width: 100%;
+    height: 260px;
+}
+.body__item .answer {
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #8b8b8b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.profile__body-sections-posts {
+    display: none;
+    width: 100%;
+    min-height: 120px;
+}
+.profile__body-sections-posts .post {
+    width: 100%;
+    min-height: 90px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #022259;
+    border-radius: 7px;
+}
+
+.post__head {
+    width: 100%;
+    height: 50px;
+}
+.epnshp-logo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../img/tesla-logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.head-info-epnshp {
+    display: inline-block;   
+}
+.epnshp-name {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.post__head .separator {
+    display: /*inline-block*/none;
+    margin: 0 6px 3px 6px;
+    width: 4px;
+    height: 4px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+}
+.post__head .epnshp-owner {
+    display: none;
+}
+
+.post__body .epnshp-info {
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
