@@ -254,10 +254,156 @@ main {
     overflow-y: scroll;
 }
 
-.post {
-    width: 60vw;
-    min-height: 200px;
+.posts {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100%;
 }
+
+.post {
+    display: grid;
+    width: 60vw;
+    min-height: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    grid-template-columns: calc(60vw - 72px);
+    grid-template-rows: 50px minmax(30px 400px) minmax(100px 200px);
+    grid-template-areas:
+        "post_header"
+        "post_body"
+        "post_footer";
+    place-content: center;
+    border-radius: 5px;
+    background-color: #022259;
+}
+
+.post__head {
+    display: grid;
+    width: calc(60vw - 72px);
+    height: 50px;
+    grid-area: post_header;
+    grid-template-columns: calc(11.25vw - 22px) calc(48.75vw - 50px);
+}
+.post__head .epnshp-logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 2vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.epnshp-logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.head-info-epnshp {
+    margin-top: 20px;
+    height: 25px;
+    width: 40vw;
+    line-height: 24px;
+}
+.head-info-epnshp .epnshp-name h2 {
+    display: inline-block;
+    min-height: 17px;
+    min-width: 20px;
+    max-width: 130px;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+.head-info-epnshp .separator {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 5px 7px 5px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-radius: 50%;
+    background-color: #d7d7d7;
+}
+.head-info-epnshp .epnshp-owner h3 {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    min-width: 20px;
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    color: #727272;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.post__body {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.post__body .epnshp-info p {
+    color: #d7d7d7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.post__body ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    list-style: none;
+}
+.post__body ul li {
+    color: #d7d7d7;
+    width: 100%;
+    height: 3rem;
+    margin: 4px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.post__body ul li a {
+    color: #d7d7d7;
+    font-size: 1.5rem;
+}
+.post__body .rating {
+    margin-top: 0;
+    display: inline-block;
+}
+.post__body .rating .star {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.post__body .rating .star-dis {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/star-dis.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 
 
 
